@@ -87,11 +87,11 @@ body{
 
 .container{
     width: 75%;
-    max-width: 1040px;
+    max-width: 1240px;
 
     align-items: stretch;
     
-    margin: var(--spacing-300) auto;
+    margin: var(--spacing-200) auto;
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -353,11 +353,11 @@ body{
 }
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1240px){
 
  .container{
      width: 75%;
-    max-width: 1024px;
+    max-width: 1240px;
 
     position: absolute;
 
@@ -380,8 +380,8 @@ body{
 
     align-items: stretch;
     
-    margin: var(--spacing-300) auto;
-    padding: var(--spacing-300) var(--spacing-300);
+    margin: var(--spacing-200) auto;
+    padding: var(--spacing-200) var(--spacing-200);
     display: grid;
     
     grid-template-rows: 1fr 1fr 1fr 1fr ;
