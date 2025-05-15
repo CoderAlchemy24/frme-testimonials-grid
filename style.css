@@ -87,7 +87,8 @@ body{
 
 .container{
     width: 75%;
-    max-width: 1240px;
+    max-width: 900px;
+    max-height: 1040px;
 
     align-items: stretch;
     
@@ -101,7 +102,7 @@ body{
 
 .card{
     width:75%;
-    height:100%;
+    height: fit-content;
     display: grid;
     grid-template: auto / auto ;
   
