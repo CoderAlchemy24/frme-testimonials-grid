@@ -75,7 +75,7 @@
 body{
     
     width: 100hw;
-    height: 100vh;
+    height: fit-content;
    
     display: flex;
    flex-direction: column;
@@ -86,7 +86,7 @@ body{
 }
 
 .container{
-    width: 75%;
+    width: 90%;
     max-width: 900px;
     max-height: 1040px;
 
