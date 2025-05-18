@@ -67,15 +67,15 @@
 }
 
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
     
-    width: 100hw;
-    height: fit-content;
+    width: 100%;
+    height: calc(max-content + var(--spacing-500)*6);
    
     display: flex;
    flex-direction: column;
@@ -86,9 +86,11 @@ body{
 }
 
 .container{
-    width: 90%;
-    max-width: 900px;
-    max-height: 1040px;
+    width: 96%;
+    max-width: 1114px;
+     
+    max-height: calc(max-content + var(--spacing-500)*4);
+   
 
     align-items: stretch;
     
@@ -107,7 +109,7 @@ body{
     grid-template: auto / auto ;
   
     align-items: center;
-    gap: var(--spacing-200);
+    gap: var(--spacing-50);
     padding: var(--spacing-200);
     
     border-radius: 8px;
@@ -201,12 +203,12 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: space-around;
+    align-items: center;
     gap: var(--spacing-100);
-    padding: var(--spacing-100) var(--spacing-200);
-
+    padding: var(--spacing-100) var(--spacing-200) ;
+    margin: var(--spacing-100) auto var(--spacing-100) 0;
     text-align: left;
-    align-self: stretch;
+    
 }
 
 
@@ -356,8 +358,13 @@ body{
 
 @media screen and (max-width:1240px){
 
+ body{
+    width:100%;
+    height: calc(max-content + var(--spacing-500)*2);
+ }
+
  .container{
-     width: 75%;
+     width: 95%;
     max-width: 1240px;
 
     position: absolute;
@@ -369,9 +376,15 @@ body{
 }
 @media screen and (max-width:768px){
 
+    body{
+        width:100%;
+       
+    }
+
  .container{
      width: 75%;
     max-width: 768px;
+     height: calc(fit-content + var(--spacing-500)*2);
 
     position: absolute;
 
@@ -430,11 +443,23 @@ body{
 
 }
 
- @media screen and (max-width:425px) {
+
+
+ .card{
+ 
+  gap:var(--spacing-50);
+  padding: var(--spacing-50);
+  margin: var(--spacing-50) auto;
+
+}
+ 
+ @media screen and (max-width:600px) {
 
  .container{
      width: 90%;
     max-width: 425px;
+     height: calc(fit-content + var(--spacing-500)*2);
+
     position: absolute;
     top:2%;
     align-items: stretch;
@@ -449,23 +474,16 @@ body{
     
   
  }
-
- .card{
- 
-  gap:var(--spacing-50);
-  padding: var(--spacing-50);
-  margin: var(--spacing-50) auto;
-
 }
- 
 
-}
 
 @media screen and (max-width:375px) {
 
  .container{
      width: 90%;
     max-width: 375px;
+
+        height: calc(fit-content + var(--spacing-500)*2);
     position: absolute;
     top:2%;
     align-items: stretch;
